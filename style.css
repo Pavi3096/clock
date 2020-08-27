@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(190, 180, 34);
+}
+
+.clock {
+    height: 750px;
+    width: 750px;
+    border-radius: 100%;
+    border: 10px solid #f47703;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.position_twelve {
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background: black;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position_three {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: black;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.position_six {
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position_nine {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: black;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.center {
+    background: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+#second_hand {
+    background: red;
+    position: absolute;
+    height: 350px;
+    width: 3px;
+    top: 0;
+    bottom: 280px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform-origin: 50% 90%;
+    transform-origin: 50% 90%;
+}
+
+#minute_hand {
+    background: #03DE84;
+    position: absolute;
+    height: 200px;
+    width: 3px;
+    top: 0;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateX(-50%);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+#hour_hand {
+    background: #03ACDE;
+    position: absolute;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    height: 150px;
+    width: 5px;
+    top: 0;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateX(-50%);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
